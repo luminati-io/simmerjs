@@ -95,6 +95,15 @@ export interface Options {
      *    exception and the element being analyzed
      */
     errorHandling?: boolean | ((error: any, element: Element) => void);
+
+    /**
+     * Attributes that cant't be a part of the selector. Can be a global list
+     * of attributes or an object where keys are tag names (in UPPERCASE)
+     *
+     * @example {IMG: ['src']}
+     * @default []
+     */
+    ignoredAttributes?: string[] | {[tag: string]: string[]}
 }
 
 interface SimmerConstructor {

@@ -21,7 +21,10 @@ export const DEFAULT_CONFIGURATION = {
   errorHandling: false,
   // A maximum length for the CSS selector can be specified - if no specific selector can be found which is shorter than this length
   // then it is treated as if no selector could be found
-  selectorMaxLength: 512
+  selectorMaxLength: 512,
+  // Attributes that cant't be a part of the selector.
+  // Can be a global list of attributes or an object where keys are tag names (in UPPERCASE)
+  ignoredAttributes: []
 }
 
 export function configure (config = {}) {
