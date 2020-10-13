@@ -1,7 +1,7 @@
 {
   "name": "simmerjs",
   "description": "A pure Javascript reverse CSS selector engine which calculates a DOM element's unique CSS selector on the current page.",
-  "version": "0.5.6",
+  "version": "0.6.0-luminati-1",
   "author": "Gidi Meir Morris",
   "main": "lib/simmer.js",
   "jsnext:main": "modules/simmer.js",
@@ -36,7 +36,7 @@
     "format": "prettier-eslint --write \"modules/**/*.js\"",
     "formatTests": "prettier-eslint --write \"__tests__/integration/*.js\"",
     "precommit": "lint-staged",
-    "prepublish": "npm run buildModule"
+    "prepare": "npm run buildModule"
   },
   "lint-staged": {
     "*.js": [
